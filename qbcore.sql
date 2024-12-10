@@ -289,7 +289,7 @@ CREATE TABLE IF NOT EXISTS `player_warns` (
 CREATE TABLE IF NOT EXISTS `inventories` (
   `id` INT(11) NOT NULL AUTO_INCREMENT,
   `identifier` VARCHAR(50) NOT NULL,
-  `items` LONGTEXT DEFAULT '[]',
+  `items` LONGTEXT,
   PRIMARY KEY (`identifier`),
   KEY `id` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4;
